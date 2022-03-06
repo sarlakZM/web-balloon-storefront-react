@@ -1,14 +1,21 @@
+# Brief
 
-## Features
 
-- HomePage (Navigate to / )
-- Show balloon in homepage
-- List balloon view: List all products. Click on a balloon to add to cart
-- Add and remove products from the floating cart using json data
-- CheckoutPage (Navigate to /checkout)
+A client named Balloons Inc has requested that we design and develop a virtual store-front for the web, that works on both mobile and desktop devices. The web app should allow users to browse through their catalog of inflatable balloon designs, and select which balloons they 
+wish to purchase -- a typical shopping cart solution.
+
+## Features && Goals
+
+- HomePage (Navigate to http://127.0.0.1:3000/ )
+- Show all the balloons
+   - sortable and filterable in a simple way
+   - Details of a balloon
+-  A "shopping cart" to review selected balloons for purchase
+- Add and remove balloon from the floating cart using json data (add a quantity of the balloon to the "shopping cart")
+- CheckoutPage (Navigate to http://127.0.0.1:3000/checkout)
 - Responsive design
 - Using Routers
-- Cutomize some components
+
 
 At this point, your project layout should look like the following:
 
@@ -20,6 +27,7 @@ my-app/
 ├─ src/
 │  └─ ...
 ├─ package.json
+|_ jest.config.js
 ├─ tsconfig.json
 └─ tslint.json
 ```
@@ -31,15 +39,10 @@ my-app/
 * `src` contains our TypeScript and CSS code. `index.tsx` is the entry-point for our file, and is mandatory.
 
 
-- Using Routers 
-- Cutomize Dialog and you can pass title, contentDialog, etc to main Dialog -> src/components/customDialog/* 
-- Reusable Components e.g. ShowIncreaseAndReduceButtons.tsx, CustomRating
+## Relationship between components
 
+<img src="/public/assets/view-project/Page-1.drawio.png">
+<img src="/public/assets/view-project/Page-2.drawio.png">
+<img src="/public/assets/view-project/Page-3.drawio.png">
+<img src="/public/assets/view-project/Page-4.drawio.png">
 
-## Relation between components
-
-<!-- ![img](http://i.imgur.com/yourfilename.png)
-\public\assets\view-project
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
-
-<img src="/public/assets/view-project/logo.png" alt="My cool logo"/> -->
