@@ -41,8 +41,9 @@ my-app/
 
 ## Relationship between components
 
-<img src="/public/assets/view-project/Page-1.drawio.png">
-<img src="/public/assets/view-project/Page-2.drawio.png">
-<img src="/public/assets/view-project/Page-3.drawio.png">
-<img src="/public/assets/view-project/Page-4.drawio.png">
+![img](https://github.com/sarlakZM/web-balloon-storefront-react/blob/master/public/assets/view-project/Page-1.drawio.png)
+![img](https://github.com/sarlakZM/web-balloon-storefront-react/blob/master/public/assets/view-project/Page-2.drawio.png)
+![img](https://github.com/sarlakZM/web-balloon-storefront-react/blob/master/public/assets/view-project/Page-3.drawio.png)
+![img](https://github.com/sarlakZM/web-balloon-storefront-react/blob/master/public/assets/view-project/Page-4.drawio.png)
+
 
