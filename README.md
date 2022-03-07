@@ -1,13 +1,10 @@
 # Balloon Store Front
 
 ## Prerequisites
-This quick start guide will teach you how to wire up TypeScript with [React](https://github.com/facebook/create-react-app),  [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started) and To learn React check out the [React documentation](https://reactjs.org/).
 
-By the end, you'll have
-
-- a project with React and TypeScript
+- a project with [React](https://github.com/facebook/create-react-app) and TypeScript
 - testing with [Jest](https://reactjs.org/docs/testing-recipes.html)
-- style(CSS tooling) with [mui](https://mui.com/) 
+- style (CSS tooling) with [mui](https://mui.com/) 
 
 
 # More Information about Project

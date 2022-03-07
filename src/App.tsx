@@ -9,6 +9,7 @@ import { BalloonTypes } from "./interfaces/types"
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Cart from './components/cart/Cart';
+import { PROJECT_TITLE } from './utils/constants';
 
 const mdTheme = createTheme({
   palette: {
@@ -98,7 +99,7 @@ export default function App() {
     handleRemoveFromCart: handleRemoveFromCart,
     handleAddToCart: handleAddToCart,
     cartItemsCount: getTotalCartItems(cartItems),
-    title: 'Bulloon Store Front',
+    title: PROJECT_TITLE,
     clearCartItems: clearCartItems,
   }
 
