@@ -1,0 +1,81 @@
+enum Color {
+  RED
+  PINK
+  GREEN
+  BLUE
+  YELLOW
+  PURPLE
+  WHITE
+  ORANGE
+  BLACK
+}
+
+enum SortInput {
+  ID
+  NAME
+  PRICE
+  AVAILABLE_SINCE
+  COLOR
+}
+
+type BalloonConnection {
+  edges: [BalloonEdge!]!
+  pageInfo: PageInfo!
+}
+
+# ISO 6801 datetime
+scalar Iso8601
+
+type Query {
+  # Get a balloon by id.
+  balloon(id: String!): Balloon
+
+  # This API follows a simplified version of the Relay pagination pattern. Specify an ID on
+  # after or before to get 5 results. There is no option for controlling the count.
+  #
+  # You can use variant and color to filter only matching results of those types.
+  balloons(
+    filter: FilterInput
+    sort: SortInput
+    after: ID
+    before: ID
+  ): BalloonConnection!
+}
+
+type Balloon {
+  id: String!
+  name: String!
+  imageUrl: String!
+  description: String!
+  color: Color!
+  variant: Variant!
+
+  # This is denominated in SEK.
+  price: Int!
+
+  # The date since this balloon has been available for sale.
+  availableSince: Iso8601!
+}
+
+type BalloonEdge {
+  node: Balloon!
+  cursor: String!
+}
+
+enum Variant {
+  NORMAL
+  HEART
+  STAR
+}
+
+type PageInfo {
+  hasPreviousPage: Boolean!
+  hasNextPage: Boolean!
+  startCursor: String
+  endCursor: String
+}
+
+input FilterInput {
+  variant: Variant
+  color: Color
+}

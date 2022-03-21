@@ -7,7 +7,7 @@ import Skeleton from '@mui/material/Skeleton';
 import Divider from '@mui/material/Divider';
 import Fab from '@mui/material/Fab';
 import { Color, DetailBalloonDialogPropsTypes} from '../../interfaces/types';
-import { enumKeys } from '../../utils/helpers';
+import { enumKeys, renderPrice } from '../../utils/helpers';
 import CustomRating from '../shared/CustomRating';
 
 export default function DetailBalloonDialog(props: DetailBalloonDialogPropsTypes) {
@@ -39,7 +39,7 @@ export default function DetailBalloonDialog(props: DetailBalloonDialogPropsTypes
                           fontSize: 14,
                       }} 
                 >
-                  ${item?.price}
+                 { renderPrice(item?.price) }
                 {/* {`${item?.price} • ${item?.description}`} */}
               </Typography>
               {item?.discout &&

@@ -1,0 +1,54 @@
+Hey Zahra,
+
+Thanks for applying for a web developer role at The Techno Creatives!
+
+Please read the following content regarding the application process.
+
+In summary: complete the provided assignment to demonstrate your abilities. Detailed description of the application process is provided at the bottom of the email.
+
+Assignment
+
+You have been provided a git repository URL below. This repository provides the assignment instructions and any starter materials needed, with the completion requirements described in the ASSIGNMENT.md.
+
+The purpose of each of our assignments is to test your ability to solve client problems and write quality code, and not your ability to manage dependencies or fight your IDE. We provide sample code and quick start projects for the more complex challenges to make it faster and easier for you to get down to the business of demonstrating your abilities.
+
+You may choose from the following tasks:
+
+- A web store-front in React
+
+- A full stack bubble popping game with WebSockets
+
+Run the following command to get your assignment git repository (Do not click the URL, it doesn’t go anywhere. It’s purely a git URL):
+
+git clone
+
+https://recruit:hej@assignments.thetc.se/zahra-C215160D595F
+
+ 
+
+You are welcome to commit and push to this repository as many times as you like while completing the assignment. Please email us once you are finished with your assignment and wish for us to assess it.
+
+You are allowed and encouraged to reach out to us if you have any questions, or find issues or ambiguities.
+
+The last day we will accept assignment submissions is March 7th.
+
+Application Process
+
+Please note that amendments to the below process may occur as a result of the ongoing COVID-19 situation.
+
+- We review your assignment
+- We might email some follow-up questions about the assignment
+ - If successful, you will have a teleconference interview (or come to our office if in Gothenburg, Sweden) for an interview with senior devs about your assignment
+- If successful, you have an interview at our office our CTO, Oskar (no whiteboards, we promise)
+- If successful, you will be made an offer. Applications from outside of the EU will have relocation costs paid (with some caveats, in general at least flights are covered).
+
+We also are able to help out with finding apartments if you are relocating.
+
+If your application is rejected at any part of the process, you will be informed as to the reasons why.
+
+
+
+--
+Oskar Hagberg
+CTO, The Techno Creatives
+

@@ -6,6 +6,7 @@ import CardContent from '@mui/material/CardContent';
 import { CardStyled } from './Cart.styled';
 import ShowIncreaseAndReduceButtons from '../shared/ShowIncreaseAndReduceButtons'
 import { CartItemPropsTypes} from '../../interfaces/types';
+import { renderPrice } from '../../utils/helpers';
 
 
 export default function CartItem(props: CartItemPropsTypes) {
@@ -32,7 +33,7 @@ export default function CartItem(props: CartItemPropsTypes) {
               {item?.name}
             </Typography>
             <Typography variant="subtitle1" color="text.secondary">
-              ${item?.price} 
+               { renderPrice(item?.price) }
             </Typography>
           </CardContent>
         </Box>

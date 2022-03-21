@@ -1,0 +1,141 @@
+balloon(
+id: String!
+): Balloon
+Get a balloon by id.
+
+type Balloon {
+id: String!
+name: String!
+imageUrl: String!
+description: String!
+color: Color!
+variant: Variant!
+price: Int!
+availableSince: Iso8601!
+}
+id: String!
+
+
+================
+balloons(
+filter: FilterInput
+sort: SortInput
+after: ID
+before: ID
+): BalloonConnection!
+This API follows a simplified version of the Relay pagination pattern. Specify an ID on after or before to get 5 results. There is no option for controlling the count.
+
+You can use variant and color to filter only matching results of those types.
+
+type BalloonConnection {
+edges: [BalloonEdge!]!
+pageInfo: PageInfo!
+}
+filter: FilterInput
+sort: SortInput
+after: ID
+before: ID
+
+
+===============
+
+
+edges: [BalloonEdge!]!
+type BalloonEdge {
+node: Balloon!
+cursor: String!
+}
+
+================
+
+node: Balloon!
+type Balloon {
+id: String!
+name: String!
+imageUrl: String!
+description: String!
+color: Color!
+variant: Variant!
+price: Int!
+availableSince: Iso8601!
+}
+==================
+id: String!
+The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
+
+scalar String
+
+=====================
+
+color: Color!
+enum Color {
+RED
+PINK
+GREEN
+BLUE
+YELLOW
+PURPLE
+WHITE
+ORANGE
+BLACK
+}
+
+
+
+variant: Variant!
+enum Variant {
+NORMAL
+HEART
+STAR
+}
+
+price: Int!
+This is denominated in SEK.
+
+The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
+
+scalar Int
+
+
+availableSince: Iso8601!
+The date since this balloon has been available for sale.
+
+ISO 6801 datetime
+
+scalar Iso8601
+
+
+
+pageInfo: PageInfo!
+type PageInfo {
+hasPreviousPage: Boolean!
+hasNextPage: Boolean!
+startCursor: String
+endCursor: String
+}
+
+
+
+ilter: FilterInput
+type FilterInput {
+variant: Variant
+color: Color
+}
+
+
+ilter: FilterInput
+type FilterInput {
+variant: Variant
+color: Color
+}
+
+
+before: ID
+The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as "4") or integer (such as 4) input value will be accepted as an ID.
+
+scalar ID
+
+
+
+
+

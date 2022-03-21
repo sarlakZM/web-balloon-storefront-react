@@ -1,6 +1,5 @@
 # Brief
 
-
 A client named Balloons Inc has requested that we design and develop a virtual store-front for the web, that works on both mobile and desktop devices. The web app should allow users to browse through their catalog of inflatable balloon designs, and select which balloons they 
 wish to purchase -- a typical shopping cart solution.
 

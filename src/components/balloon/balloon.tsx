@@ -15,6 +15,7 @@ import CustomIconAddProduct from './CustomIconAddBalloon'
 import CustomButtonOpenDialog from '../custom-dialog/CustomButtonOpenDialog';
 import DetailBalloonDialog from './DetailBalloonDialog';
 import { BalloonPropsTypes } from '../../interfaces/types';
+import { renderPrice } from '../../utils/helpers';
 
 
 export default function Balloon(props: BalloonPropsTypes) {
@@ -74,7 +75,7 @@ export default function Balloon(props: BalloonPropsTypes) {
                       fontSize: 14,
                   }} 
             >
-              ${item?.price}
+            { renderPrice(item?.price) }
             {/* {`${item?.price} • ${item?.description}`} */}
           </Typography>
           {item?.discout ?

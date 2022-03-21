@@ -11,6 +11,7 @@ import CartItem from '../components/cart/CartItem';
 import { calculateTotalAmoutOfCartItems } from '../services/ProductService';
 import AddressForm from '../components/checkout/AddressForm';
 import PaymentForm from '../components/checkout/PaymentForm';
+import { renderPrice } from '../utils/helpers';
 
 const steps = ['Shipping address', 'Payment details'];
 
@@ -63,7 +64,7 @@ export default function CheckOutPage(props: any) {
                   Total:
                 </Typography>
                 <Typography display="inline"color="text.secondary">
-                  $ {calculateTotalAmoutOfCartItems(cartItems).toFixed(2)}
+                  { renderPrice(calculateTotalAmoutOfCartItems(props?.cartItems).toFixed(2)) }
                 </Typography>
               </Box>    
         </Grid> 

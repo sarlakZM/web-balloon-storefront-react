@@ -10,6 +10,7 @@ import { CardStyled } from './Cart.styled';
 import { calculateTotalAmoutOfCartItems } from '../../services/ProductService';
 import { BalloonTypes, CartPropsTypes} from '../../interfaces/types';
 import { ANCHORE } from '../../utils/constants';
+import { renderPrice } from '../../utils/helpers';
 import CartItem from './CartItem';
 
 
@@ -57,8 +58,9 @@ const FooterCart = (props: any) => (
               Total:
             </Typography>
             <Typography display="inline"color="text.secondary">
-              $ {calculateTotalAmoutOfCartItems(props?.cartItems).toFixed(2)}
+              { renderPrice(calculateTotalAmoutOfCartItems(props?.cartItems).toFixed(2)) }
             </Typography>
+
           </Box>
 
           <Box sx={{ display: 'flex', 
