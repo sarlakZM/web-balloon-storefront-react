@@ -9,7 +9,7 @@
 
 # More Information about Project
 
-- [ASSIGNMENT.md](https://github.com/ASSIGNMENT.md)
+- [ASSIGNMENT.md](ASSIGNMENT.md)
 
 ## Install Dependencies
 
